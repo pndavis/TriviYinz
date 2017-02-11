@@ -8,6 +8,46 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#000000"
     tools:context="com.example.paul.steelhacks.Result">
+
+    <TextView
+        android:layout_width="700px"
+        android:layout_height="wrap_content"
+        android:textSize="110px"
+        android:text="Your Score:"
+        android:gravity="center"
+        android:textColor="#ffff00"
+        android:id="@+id/YS"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp" />
+
+    <TextView
+        android:layout_width="700px"
+        android:layout_height="wrap_content"
+        android:textSize="170px"
+        android:text="/"
+        android:gravity="center"
+        android:textColor="#ffff00"
+        android:id="@+id/slash"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/YS"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="700px"
+        android:layout_height="wrap_content"
+        android:textSize="170px"
+        android:text="444"
+        android:gravity="center"
+        android:textColor="#47d147"
+        android:id="@+id/cor"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/slash"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
 
 </RelativeLayout>
