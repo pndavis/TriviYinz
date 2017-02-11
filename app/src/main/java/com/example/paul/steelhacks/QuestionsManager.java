@@ -7,19 +7,17 @@ import java.util.Random;
 import java.util.Scanner;
 
 public class QuestionsManager {
-    ArrayList<Questions> inventionQs = new ArrayList<Questions>();
+    ArrayList<Questions> QuestionList = new ArrayList<Questions>();
 
-    public QuestionsManager() throws FileNotFoundException{
+    public QuestionsManager(String categories) throws FileNotFoundException{
         try {
-            Scanner input = new Scanner(new File("Inventions.txt"));
+            Scanner input = new Scanner(new File(categories + ".txt"));
             input.useDelimiter(", ");
 
             while (input.hasNext())
             {
-                inventionQs.add(new Questions(input.next(), input.next(), input.next(), input.next(), input.next(), input.nextInt()));
+                QuestionList.add(new Questions(input.next(), input.next(), input.next(), input.next(), input.next(), input.nextInt()));
             }
-
-
         }
         catch (FileNotFoundException e)
         {
@@ -31,9 +29,8 @@ public class QuestionsManager {
     public Questions getQuestion()
     {
         Random rand = new Random();
-        int  n = rand.nextInt(inventionQs.size());
+        int  n = rand.nextInt(QuestionList.size());
 
-
-        return inventionQs.get(n);
+        return QuestionList.get(n);
     }
 }
