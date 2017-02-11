@@ -25,7 +25,7 @@
     <Button
         android:text="geography"
         android:layout_centerHorizontal="true"
-        android:layout_width="150dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/chooseCat"
         android:layout_marginLeft="10dp"
@@ -36,7 +36,7 @@
     <Button
         android:text="Sports"
         android:layout_centerHorizontal="true"
-        android:layout_width="150dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/geogButton"
         android:id="@+id/sportButton"
@@ -45,7 +45,7 @@
     <Button
         android:text="Inventions"
         android:layout_centerHorizontal="true"
-        android:layout_width="150dp"
+        android:layout_width="250dp"
         android:layout_below="@id/sportButton"
         android:layout_height="wrap_content"
         android:id="@+id/inventButton"
@@ -54,7 +54,7 @@
     <Button
         android:text="misc"
         android:layout_centerHorizontal="true"
-        android:layout_width="150dp"
+        android:layout_width="250dp"
         android:layout_below="@id/inventButton"
         android:layout_height="wrap_content"
         android:id="@+id/miscButton"
