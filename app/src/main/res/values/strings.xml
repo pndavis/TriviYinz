@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Steelhacks</string>
+    <string name="title_activity_category">category</string>
 </resources>
