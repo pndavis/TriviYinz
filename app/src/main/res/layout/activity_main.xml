@@ -8,11 +8,43 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#000000"
     tools:context="com.example.paul.steelhacks.MainActivity">
 
     <TextView
         android:layout_width="700px"
         android:layout_height="wrap_content"
-        android:textSize="200px"
-        android:text="Hello Lenny!" />
+        android:textSize="150px"
+        android:text="TriviYinz!"
+        android:gravity="center"
+        android:textColor="#ffff00"
+        android:id="@+id/textView"
+        android:layout_marginTop="65dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="   Singleplayer   "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:background="#0033cc"
+        android:textColor="#e6e600"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="116dp"
+        android:id="@+id/single"
+        android:onClick="single"/>
+
+    <Button
+        android:text="   Multiplayer   "
+        android:background="#0033cc"
+        android:textColor="#e6e600"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/multi"
+        android:layout_below="@+id/single"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:onClick="multi"/>
+
+
 </RelativeLayout>
