@@ -23,7 +23,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void multi(View button){
-
+        Intent intent = new Intent(this, instructions.class);
+        int mode = 1;
+        intent.putExtra("mode", mode);
+        startActivity(intent);
     }
 
 
