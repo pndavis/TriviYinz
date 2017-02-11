@@ -15,7 +15,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Instructions"></activity>
+        <activity android:name=".Instructions" />
+        <activity
+            android:name=".category"
+            android:label="@string/title_activity_category"
+            android:parentActivityName=".Instructions"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.paul.steelhacks.Instructions" />
+        </activity>
     </application>
 
 </manifest>
