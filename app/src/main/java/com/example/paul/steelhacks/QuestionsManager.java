@@ -16,7 +16,7 @@ public class QuestionsManager {
 
             while (input.hasNext())
             {
-                inventionQs.add(new Questions(input.next(), input.next(), input.next(), input.next(), input.next(), input.nextInt(), input.nextInt()));
+                inventionQs.add(new Questions(input.next(), input.next(), input.next(), input.next(), input.next(), input.nextInt()));
             }
 
 
