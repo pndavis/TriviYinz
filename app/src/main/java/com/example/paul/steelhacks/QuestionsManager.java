@@ -12,12 +12,13 @@ public class QuestionsManager {
 
     public QuestionsManager(String categories) throws FileNotFoundException{
         try {
-            Scanner input = new Scanner(new File(categories + ".txt"));
+            Scanner input = new Scanner(new File("assets/"+categories + ".txt"));
             input.useDelimiter(", ");
 
             while (input.hasNext())
             {
                 QuestionList.add(new Questions(input.next(), input.next(), input.next(), input.next(), input.next(), input.nextInt()));
+                input.nextLine();
             }
         }
         catch (FileNotFoundException e)

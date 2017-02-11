@@ -55,6 +55,7 @@ public class Game extends AppCompatActivity {
                     System.out.println("ERROR: FILE NOT FOUND");
                 }
                 while(true) {
+                    System.out.println("HELLO IT WORKS YOU GOOF");
                     question = manager.getQuestion();
                     t.setText(question.getQuestion());
                     option1.setText(question.getOption1());
