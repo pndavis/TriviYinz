@@ -13,6 +13,6 @@
     <TextView
         android:layout_width="700px"
         android:layout_height="wrap_content"
-        android:textSize="100px"
+        android:textSize="200px"
         android:text="Hello Lenny!" />
 </RelativeLayout>
