@@ -25,6 +25,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.paul.steelhacks.Instructions" />
         </activity>
+        <activity android:name=".Game"></activity>
     </application>
 
 </manifest>

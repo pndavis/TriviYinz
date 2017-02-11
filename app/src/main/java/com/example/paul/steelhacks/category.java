@@ -17,4 +17,31 @@ public class category extends AppCompatActivity {
         Intent intent = getIntent();
     }
 
+    public void geography(View button){
+        Intent intent = new Intent(this, Game.class);
+        int cat = 0;
+        intent.putExtra("cat", cat);
+        startActivity(intent);
+    }
+
+    public void sports (View button){
+        Intent intent = new Intent(this, Game.class);
+        int cat = 1;
+        intent.putExtra("cat", cat);
+        startActivity(intent);
+    }
+
+    public void inventions (View button){
+        Intent intent = new Intent(this, Game.class);
+        int cat = 2;
+        intent.putExtra("cat", cat);
+        startActivity(intent);
+    }
+
+    public void misc (View button){
+        Intent intent = new Intent(this, Game.class);
+        int cat = 3;
+        intent.putExtra("cat", cat);
+        startActivity(intent);
+    }
 }

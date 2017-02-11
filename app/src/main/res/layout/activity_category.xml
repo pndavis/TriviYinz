@@ -30,7 +30,8 @@
         android:layout_below="@id/chooseCat"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="75dp"
-        android:id="@+id/geogButton" />
+        android:id="@+id/geogButton"
+        android:onClick="geography"/>
 
     <Button
         android:text="Sports"
@@ -38,7 +39,8 @@
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/geogButton"
-        android:id="@+id/sportButton" />
+        android:id="@+id/sportButton"
+        android:onClick="sports"/>
 
     <Button
         android:text="Inventions"
@@ -46,7 +48,8 @@
         android:layout_width="150dp"
         android:layout_below="@id/sportButton"
         android:layout_height="wrap_content"
-        android:id="@+id/inventButton" />
+        android:id="@+id/inventButton"
+        android:onClick="inventions"/>
 
     <Button
         android:text="misc"
@@ -54,6 +57,7 @@
         android:layout_width="150dp"
         android:layout_below="@id/inventButton"
         android:layout_height="wrap_content"
-        android:id="@+id/button4" />
+        android:id="@+id/miscButton"
+        android:onClick="misc"/>
 
 </RelativeLayout>
