@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class QuestionsManager {
     ArrayList<Questions> QuestionList = new ArrayList<Questions>();
+    ArrayList<Integer> UsedQuestions = new ArrayList<Integer>();
 
     public QuestionsManager(String categories) throws FileNotFoundException{
         try {
@@ -30,7 +31,11 @@ public class QuestionsManager {
     {
         Random rand = new Random();
         int  n = rand.nextInt(QuestionList.size());
-
+        while(UsedQuestions.contains(n)){
+            n = rand.nextInt(QuestionList.size());
+        }
+        UsedQuestions.add(n);
+        if(UsedQuestions.size() == QuestionList.size()) UsedQuestions.clear();
         return QuestionList.get(n);
     }
 }
