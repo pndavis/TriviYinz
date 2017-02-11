@@ -20,4 +20,49 @@
         android:textColor="#ffff00"
         android:layout_marginTop="79dp"
         android:id="@+id/question" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/question"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/choice1"
+        android:onClick="buttonA"/>
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choice1"
+        android:layout_alignRight="@+id/choice1"
+        android:layout_alignEnd="@+id/choice1"
+        android:layout_marginTop="30dp"
+        android:id="@+id/choice2"
+        android:onClick="buttonB"/>
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choice2"
+        android:layout_alignRight="@+id/choice1"
+        android:layout_alignEnd="@+id/choice1"
+        android:layout_marginTop="30dp"
+        android:id="@+id/choice3"
+        android:onClick="buttonC"/>
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choice3"
+        android:layout_alignLeft="@+id/choice3"
+        android:layout_alignStart="@+id/choice3"
+        android:layout_marginTop="30dp"
+        android:id="@+id/choice4"
+        android:onClick="buttonD"/>
+
+
 </RelativeLayout>
