@@ -1,5 +1,6 @@
 package com.example.paul.steelhacks;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Handler;
@@ -45,7 +46,7 @@ public class Game extends AppCompatActivity {
                 switch(categ){
                     case 0: filename = "Geography";break;
                     case 1: filename = "Sports";break;
-                    case 2: filename = "Inventions";break;
+                    case 2: filename = "inventions";break;
                     case 3: filename = "Misc";break;
                 }
                 try {
@@ -54,20 +55,20 @@ public class Game extends AppCompatActivity {
                 catch(FileNotFoundException fnfe){
                     System.out.println("ERROR: FILE NOT FOUND");
                 }
-                while(true) {
-                    System.out.println("HELLO IT WORKS YOU GOOF");
-                    question = manager.getQuestion();
-                    t.setText(question.getQuestion());
-                    option1.setText(question.getOption1());
-                    option2.setText(question.getOption2());
-                    option3.setText(question.getOption3());
-                    option4.setText(question.getOption4());
-
-                }
+                changeQuestion();
             }
 
 
-        }, 20000);
+        }, 2000);
+    }
+
+    public void changeQuestion(){
+        question = manager.getQuestion();
+        t.setText(question.getQuestion());
+        option1.setText(question.getOption1());
+        option2.setText(question.getOption2());
+        option3.setText(question.getOption3());
+        option4.setText(question.getOption4());
     }
 
     public void buttonA(View button) {
@@ -77,6 +78,17 @@ public class Game extends AppCompatActivity {
             option1.setBackgroundColor(Color.GREEN);
             score ++;
         }
+        else{
+            option1.setBackgroundColor(Color.RED);
+        }
+        try {
+            wait(5000);
+        }
+        catch(Exception e){
+
+        }
+        option1.setBackgroundColor(Color.GRAY);
+        changeQuestion();
     }
 
 

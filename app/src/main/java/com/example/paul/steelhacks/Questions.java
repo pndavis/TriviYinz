@@ -12,13 +12,13 @@ public class Questions {
 
     }
 
-    public Questions(String q, String o1, String o2, String o3, String o4, int a){
+    public Questions(String q, String o1, String o2, String o3, String o4, String a){
         question = q;
         option1 = o1;
         option2 = o2;
         option3 = o3;
         option4 = o4;
-        answer = a;
+        answer = Integer.parseInt(a);
     }
 
     public String getQuestion() {
