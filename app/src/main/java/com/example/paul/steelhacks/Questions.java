@@ -44,4 +44,8 @@ public class Questions {
     public int getAnswer() {
         return answer;
     }
+
+    public String toString(){
+        return "Question: " + question + "Options: " + option1 + ", " + option2 + ", " + option3 + ", " + option4 + "Answer" + answer;
+    }
 }
