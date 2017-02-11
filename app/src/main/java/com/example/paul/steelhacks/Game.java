@@ -14,10 +14,16 @@ public class Game extends AppCompatActivity {
         Intent intent = getIntent();
         TextView t = (TextView) findViewById(R.id.question);
         if(intent.getExtras().getInt("cat") == 0){
-            t.setText("HELLO REINHARDT!");
+            t.setText("HELLO ZENYATTA!"); // retrieve the questions from file
         }
         else if(intent.getExtras().getInt("cat")== 1){
             t.setText("HELLO DVA!!");
+        }
+        else if(intent.getExtras().getInt("cat")== 2){
+            t.setText("HELLO PHARAH!!");
+        }
+        else if(intent.getExtras().getInt("cat")== 3){
+            t.setText("HELLO WIDOWMAKER!!");
         }
     }
 
