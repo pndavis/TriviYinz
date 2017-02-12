@@ -17,8 +17,11 @@ public class Result extends AppCompatActivity {
         Intent intent = getIntent();
         int correct = intent.getExtras().getInt("correct");
         int total = intent.getExtras().getInt("total");
-        TextView t = (TextView) findViewById(R.id.score);
-
-
+        TextView scoreText = (TextView) findViewById(R.id.score);
+        TextView totalText = (TextView) findViewById(R.id.cor);
+        String corr = Integer.toString(correct);
+        String totals= Integer.toString(total);
+        scoreText.setText(corr);
+        totalText.setText(totals);
     }
 }

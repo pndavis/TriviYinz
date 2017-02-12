@@ -23,6 +23,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="65dp" />
 
+
+
     <TextView
         android:layout_width="700px"
         android:layout_height="wrap_content"
@@ -32,9 +34,8 @@
         android:textColor="#ffff00"
         android:id="@+id/slash"
         android:layout_marginTop="42dp"
-        android:layout_below="@+id/YS"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_below="@+id/score"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="700px"
@@ -44,10 +45,20 @@
         android:gravity="center"
         android:textColor="#47d147"
         android:id="@+id/cor"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="18dp"
-        android:layout_below="@+id/slash"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_below="@+id/slash" />
+
+    <TextView
+        android:text="333"
+        android:textSize="170px"
+        android:layout_below="@id/YS"
+        android:textColor="#47d147"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:id="@+id/score" />
 
 
 </RelativeLayout>

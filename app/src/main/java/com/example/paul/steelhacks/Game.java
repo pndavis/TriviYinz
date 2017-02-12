@@ -27,6 +27,7 @@ public class Game extends AppCompatActivity {
     Button option3;
     Button option4;
     TextView t;
+    Intent intent1= null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +40,7 @@ public class Game extends AppCompatActivity {
         option2 = (Button) findViewById(R.id.choice2);
         option3 = (Button) findViewById(R.id.choice3);
         option4 = (Button) findViewById(R.id.choice4);
+        intent1 = new Intent(this, Result.class);
 
 
 
@@ -57,12 +59,21 @@ public class Game extends AppCompatActivity {
             System.out.println("ERROR: FILE NOT FOUND");
         }
 
+        Handler handle = new Handler();
+        handle.postDelayed(new Runnable(){
+            @Override
+            public void run() {
+                intent1.putExtra("correct", score);
+                intent1.putExtra("total", total);
+                startActivity(intent1);
+            }
+        }, 20000);
         changeQuestion();
 
     }
 
     public void changeQuestion(){
-
+        total++;
         option1.setBackgroundColor(Color.DKGRAY);
         option2.setBackgroundColor(Color.DKGRAY);
         option3.setBackgroundColor(Color.DKGRAY);

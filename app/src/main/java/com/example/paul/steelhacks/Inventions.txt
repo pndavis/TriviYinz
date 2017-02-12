@@ -1,11 +1,11 @@
-What carnival ride was invented by a yinzer?, Carousel, Ferris Wheel, Bumper Cars, Scrambler, 1
-The Klondike Bar was invented in Pittsburgh by the owner of what business?, Ice Cream Shop, Bakery, Restaurant, Deli, 3
-What McDonalds menu item was created by a franchisee in Pittsburgh?, Big Mac, McRib, Snack Wrap, Chicken McNuggets, 0
-Jonas Salk, a researcher at the University of Pittsburgh, invented the vaccine for what disease?, Measles, Small Pox, Polio, Rubella, 2
-The Poison Center at Children's Hospital of Pittsburgh created what?, Mr. Yuck Stickers, Child Locks, Non-Toxic Disinfectant, Ipecac, 0
-What game was invented in Pittsburgh?, Monopoly, Bingo, LIFE, Trouble, 1
-What emoticon was first used by a CMU computer scientist?, :-), 8-), <3, ¯\_(ツ)_/¯, 0
-What car related business began in Pittsburgh?, Mechanic Shop, Car Manufacturing Plant, Gas Station, Drive-In Theater, 2
-What entertainment venue was invented in Pittsburgh? Concert Hall, Comedy Club, Laser Light Show, Movie Theater, 3
-What sport had its first official venue built in Pittsburgh?, Football, Baseball, Soccer, Badminton, 1
-What communication station was first built in Pittsburgh?, Telegram Station, Radio Station, Cell Phone Tower, Smoke Signal, 1
+What carnival ride was invented by a yinzer?; Carousel; Ferris Wheel; Bumper Cars; Scrambler; 1
+The Klondike Bar was invented in Pittsburgh by the owner of what business?; Ice Cream Shop; Bakery; Restaurant; Deli; 3
+What McDonalds menu item was created by a franchisee in Pittsburgh?; Big Mac; McRib; Snack Wrap; Chicken McNuggets; 0
+Jonas Salk, a researcher at the University of Pittsburgh, invented the vaccine for what disease?; Measles; Small Pox; Polio; Rubella; 2
+The Poison Center at Children's Hospital of Pittsburgh created what?; Mr. Yuck Stickers; Child Locks; Non-Toxic Disinfectant; Ipecac; 0
+What game was invented in Pittsburgh?; Monopoly; Bingo; LIFE; Trouble; 1
+What emoticon was first used by a CMU computer scientist?; :-); 8-); <3; ¯\_(ツ)_/¯; 0
+What car related business began in Pittsburgh?; Mechanic Shop; Car Manufacturing Plant; Gas Station; Drive-In Theater; 2
+What entertainment venue was invented in Pittsburgh?; Concert Hall; Comedy Club; Laser Light Show; Movie Theater; 3
+What sport had its first official venue built in Pittsburgh?; Football; Baseball; Soccer; Badminton; 1
+What communication station was first built in Pittsburgh?; Telegram Station; Radio Station; Cell Phone Tower; Smoke Signal; 1
