@@ -64,12 +64,21 @@
         android:text="Main Menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="107dp"
         android:id="@+id/mainMenu"
         android:onClick="mainMenu"
-        />
+        android:layout_marginTop="61dp"
+        android:layout_alignTop="@+id/categoryMenu"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Category Menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/categoryMenu"
+        android:onClick="categoryMenu"
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/cor"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

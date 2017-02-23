@@ -25,8 +25,15 @@ public class Result extends AppCompatActivity {
         totalText.setText(totals);
     }
 
-    public void mainMenu(View button){
+    public void categoryMenu(View button){
         Intent intent = new Intent(this, category.class);
+        int cat = 0;
+        intent.putExtra("mode", cat);
+        startActivity(intent);
+    }
+
+    public void mainMenu(View button){
+        Intent intent = new Intent(this, MainActivity.class);
         int cat = 0;
         intent.putExtra("mode", cat);
         startActivity(intent);
