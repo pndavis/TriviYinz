@@ -61,5 +61,15 @@
         android:id="@+id/choice4"
         android:onClick="buttonD"/>
 
+    <TextView
+        android:text="Time left:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/countDown"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
 
 </RelativeLayout>

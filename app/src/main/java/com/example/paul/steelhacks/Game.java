@@ -1,8 +1,8 @@
 package com.example.paul.steelhacks;
 
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
+import android.os.CountDownTimer;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -10,9 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.EventListener;
 
 public class Game extends AppCompatActivity {
     int score = 0;
@@ -26,7 +24,8 @@ public class Game extends AppCompatActivity {
     Button option2;
     Button option3;
     Button option4;
-    TextView t;
+    TextView countDown;
+    TextView questionText;
     Intent intent1= null;
 
     @Override
@@ -35,13 +34,13 @@ public class Game extends AppCompatActivity {
         setContentView(R.layout.activity_game);
         final Intent intent = getIntent();
         categ = intent.getExtras().getInt("cat");
-        t = (TextView) findViewById(R.id.question);
+        countDown = (TextView) findViewById(R.id.countDown);
+        questionText = (TextView) findViewById(R.id.question);
         option1 = (Button) findViewById(R.id.choice1);
         option2 = (Button) findViewById(R.id.choice2);
         option3 = (Button) findViewById(R.id.choice3);
         option4 = (Button) findViewById(R.id.choice4);
         intent1 = new Intent(this, Result.class);
-
 
 
         //File implementation -- to be fixed
@@ -70,7 +69,19 @@ public class Game extends AppCompatActivity {
         }, 20000);
         changeQuestion();
 
+        new CountDownTimer(21000, 1000) {
+
+
+            public void onTick ( long millisUntilFinished){
+                countDown.setText("" + millisUntilFinished / 1000);
+            }
+            public void onFinish() {
+                countDown.setText("done!");
+            }
+        }.start();
+
     }
+
 
     public void changeQuestion(){
         total++;
@@ -79,7 +90,7 @@ public class Game extends AppCompatActivity {
         option3.setBackgroundColor(Color.DKGRAY);
         option4.setBackgroundColor(Color.DKGRAY);
         question = manager.getQuestion();
-        t.setText(question.getQuestion());
+        questionText.setText(question.getQuestion());
         option1.setText(question.getOption1());
         option2.setText(question.getOption2());
         option3.setText(question.getOption3());
