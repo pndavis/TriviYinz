@@ -24,4 +24,11 @@ public class Result extends AppCompatActivity {
         scoreText.setText(corr);
         totalText.setText(totals);
     }
+
+    public void mainMenu(View button){
+        Intent intent = new Intent(this, category.class);
+        int cat = 0;
+        intent.putExtra("mode", cat);
+        startActivity(intent);
+    }
 }

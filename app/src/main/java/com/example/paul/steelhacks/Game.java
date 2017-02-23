@@ -90,8 +90,8 @@ public class Game extends AppCompatActivity {
         // if correct answer was this index, increment total
         // reload strings
         if (question.getAnswer() == 0) {
-        option1.setBackgroundColor(Color.GREEN);
-        score++;
+            option1.setBackgroundColor(Color.GREEN);
+            score++;
         }
         else {
             option1.setBackgroundColor(Color.RED);
