@@ -27,15 +27,15 @@ public class Result extends AppCompatActivity {
 
     public void categoryMenu(View button){
         Intent intent = new Intent(this, category.class);
-        int cat = 0;
-        intent.putExtra("mode", cat);
+        int mode = 0;
+        intent.putExtra("mode", mode);
         startActivity(intent);
     }
 
     public void mainMenu(View button){
         Intent intent = new Intent(this, MainActivity.class);
-        int cat = 0;
-        intent.putExtra("mode", cat);
+        int mode = 0;
+        intent.putExtra("mode", mode);
         startActivity(intent);
     }
 }
